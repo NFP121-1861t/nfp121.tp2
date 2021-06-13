@@ -16,9 +16,14 @@ public class FahrenheitCelsius {
      *            ...
      */
     public static void main(String[] args) {
-           for(int i=0;i<args.length;i++){
-               System.out.println(args[i] + "\u00B0F -> " + fahrenheitEnCelsius((Integer.parseInt(args[i])))+ "\u00B0C");   
-            }
+       int fahrenheit=0;
+         float celsius=0;
+          for(int i=0;i<args.length;i++){
+              fahrenheit=Integer.parseInt(args[i]);
+              celsius=fahrenheitEnCelsius(fahrenheit);
+              System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C");   
+   
+         }
             
     }
 
